@@ -17,6 +17,17 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>unnamed-snapshots</id>
+            <url>https://repo.unnamed.team/repository/unnamed-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>unnamed-releases</id>
+            <url>https://repo.unnamed.team/repository/unnamed-releases/</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
