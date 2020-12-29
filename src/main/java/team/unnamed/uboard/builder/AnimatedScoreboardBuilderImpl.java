@@ -150,7 +150,7 @@ public class AnimatedScoreboardBuilderImpl implements AnimatedScoreboardBuilder 
                 .setAnimatedLines(lines)
                 .setTitle(title);
 
-        scoreboardManager.registerScoreboard(animatedScoreboard, usedScoreboard);
+        scoreboardManager.registerScoreboard(animatedScoreboard, usedScoreboard, true);
 
         return animatedScoreboard;
     }

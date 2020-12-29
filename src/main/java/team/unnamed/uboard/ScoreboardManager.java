@@ -9,7 +9,11 @@ import java.util.Optional;
 public interface ScoreboardManager {
     Optional<ScoreboardObjective> getScoreboard(String name);
 
-    void registerScoreboard(ScoreboardObjective objective, Scoreboard usedScoreboard);
+    default void registerScoreboard(ScoreboardObjective objective, Scoreboard usedScoreboard) {
+        registerScoreboard(objective, usedScoreboard, false);
+    }
+
+    void registerScoreboard(ScoreboardObjective objective, Scoreboard usedScoreboard, boolean updating);
 
     void removeScoreboard(ScoreboardObjective objective);
 

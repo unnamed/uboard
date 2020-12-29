@@ -21,8 +21,8 @@ public class SimpleScoreboardManager implements ScoreboardManager {
     private final Map<ScoreboardObjective, Scoreboard> scoreboardsByObjective;
     private final Set<ScoreboardObjective> updatingObjectives;
 
-    private BukkitTask updateScoreboardTask;
-    private BukkitTask updateTitlesTask;
+    private final BukkitTask updateScoreboardTask;
+    private final BukkitTask updateTitlesTask;
 
     public SimpleScoreboardManager(Plugin plugin) {
         objectivesByName = new ConcurrentHashMap<>();
@@ -48,14 +48,16 @@ public class SimpleScoreboardManager implements ScoreboardManager {
     }
 
     @Override
-    public void registerScoreboard(ScoreboardObjective objective, Scoreboard usedScoreboard) {
+    public void registerScoreboard(ScoreboardObjective objective, Scoreboard usedScoreboard, boolean updating) {
         if (objectivesByName.putIfAbsent(objective.getName(), objective) != null) {
             throw new IllegalArgumentException("An objective with the name " + objective.getName() + " is already registered!");
         }
 
         scoreboardsByObjective.put(objective, usedScoreboard);
-        updatingObjectives.add(objective);
-
+        
+        if (updating) {
+            updatingObjectives.add(objective);
+        }
     }
 
     @Override
