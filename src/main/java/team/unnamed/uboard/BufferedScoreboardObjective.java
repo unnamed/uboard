@@ -1,4 +1,4 @@
-package me.fixeddev.uboard;
+package team.unnamed.uboard;
 
 import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;

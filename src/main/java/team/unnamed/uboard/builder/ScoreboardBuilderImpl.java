@@ -1,9 +1,9 @@
-package me.fixeddev.uboard.builder;
+package team.unnamed.uboard.builder;
 
-import me.fixeddev.uboard.BufferedScoreboardObjective;
-import me.fixeddev.uboard.Line;
-import me.fixeddev.uboard.ScoreboardManager;
-import me.fixeddev.uboard.ScoreboardObjective;
+import team.unnamed.uboard.BufferedScoreboardObjective;
+import team.unnamed.uboard.Line;
+import team.unnamed.uboard.ScoreboardManager;
+import team.unnamed.uboard.ScoreboardObjective;
 import org.bukkit.ChatColor;
 import org.bukkit.scoreboard.Scoreboard;
 

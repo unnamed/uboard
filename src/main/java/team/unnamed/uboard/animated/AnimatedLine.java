@@ -1,6 +1,6 @@
-package me.fixeddev.uboard.animated;
+package team.unnamed.uboard.animated;
 
-import me.fixeddev.uboard.Line;
+import team.unnamed.uboard.Line;
 
 import java.util.Collection;
 import java.util.Deque;

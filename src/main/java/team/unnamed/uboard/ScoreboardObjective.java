@@ -1,4 +1,4 @@
-package me.fixeddev.uboard;
+package team.unnamed.uboard;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package me.fixeddev.uboard;
+package team.unnamed.uboard;
 
-import me.fixeddev.uboard.builder.ScoreboardBuilder;
+import team.unnamed.uboard.builder.ScoreboardBuilder;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 

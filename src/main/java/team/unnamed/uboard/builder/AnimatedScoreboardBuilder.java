@@ -1,7 +1,7 @@
-package me.fixeddev.uboard.builder;
+package team.unnamed.uboard.builder;
 
-import me.fixeddev.uboard.animated.AnimatedLine;
-import me.fixeddev.uboard.animated.AnimatedScoreboardObjective;
+import team.unnamed.uboard.animated.AnimatedLine;
+import team.unnamed.uboard.animated.AnimatedScoreboardObjective;
 
 import java.util.List;
 
