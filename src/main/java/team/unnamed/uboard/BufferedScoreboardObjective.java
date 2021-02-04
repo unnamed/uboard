@@ -52,8 +52,7 @@ public class BufferedScoreboardObjective implements ScoreboardObjective {
             return this;
         }
 
-        title = newTitle.length() < 48 ? title : title.substring(0, 48);
-
+        title = newTitle.length() < 48 ? newTitle : newTitle.substring(0, 48);
         return this;
     }
 

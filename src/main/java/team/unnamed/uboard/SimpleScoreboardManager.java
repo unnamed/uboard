@@ -57,6 +57,8 @@ public class SimpleScoreboardManager implements ScoreboardManager {
         
         if (updating) {
             updatingObjectives.add(objective);
+        } else {
+            objective.updateScoreboard();
         }
     }
 
