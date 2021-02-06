@@ -89,7 +89,7 @@ public class ScoreboardBuilderImpl implements ScoreboardBuilder {
         int colorIndex = RANDOM.nextInt(17);
         ChatColor color = ChatColor.values()[colorIndex];
 
-        StringBuilder emptySpace = new StringBuilder(ChatColor.COLOR_CHAR + color.toString());
+        StringBuilder emptySpace = new StringBuilder(color.toString());
 
         boolean moreThanSixteen = usedEmptySpaces.size() > 16;
 
@@ -103,6 +103,8 @@ public class ScoreboardBuilderImpl implements ScoreboardBuilder {
             colorIndex = RANDOM.nextInt(17);
             color = ChatColor.values()[colorIndex];
         }
+
+        usedEmptySpaces.add(emptySpace.toString());
 
         addLine(emptySpace.toString());
 
